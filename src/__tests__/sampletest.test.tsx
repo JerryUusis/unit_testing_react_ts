@@ -8,4 +8,10 @@ describe("First test group", () => {
         const testingElement = screen.getByTestId('test-1');
         expect(testingElement).toBeInTheDocument();
     })
+
+    test("Should have text content", () => {
+        render(<TestingComponent/>)
+        const testingElement = screen.getByTestId('test-2');
+        expect(testingElement).toHaveTextContent('This component is used for testing')
+    })
 })
