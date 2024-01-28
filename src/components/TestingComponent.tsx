@@ -1,9 +1,9 @@
 const TestingComponent = () => {
     return (
-        <>
-        <h1>This component is used for testing</h1>
-        <p>Text content</p>
-        </>
+        <div data-testid="test-1">
+            <h1>This component is used for testing</h1>
+            <p>Text content</p>
+        </div>
     )
 }
 

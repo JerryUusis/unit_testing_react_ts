@@ -1,5 +1,11 @@
+import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
+import TestingComponent from '../components/TestingComponent'
+
 describe("First test group", () => {
-    test("Test if true is true", () => {
-        expect(true).toBe(true)
+    test("Should render TestingComponent", () => {
+        render(<TestingComponent />)
+        const testingElement = screen.getByTestId('test-1');
+        expect(testingElement).toBeInTheDocument();
     })
 })
