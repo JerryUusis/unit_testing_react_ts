@@ -1,4 +1,4 @@
-# Unit testing React with Jest
+# Unit testing React/TypeScript with Jest
 
 If you want to write tests for your React/TypeScript application with Jest, you need to do some configuration and install some libraries get Jest tests running. Application in the repo was built using Vite.
 
