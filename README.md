@@ -32,7 +32,7 @@ npm install --save-dev jest
 npm i --save-dev @types/jest
 ```
 
-### **ts-jest** 
+### **ts-jest**
 
 ```bash
 npm install --save-dev ts-jest
@@ -51,10 +51,11 @@ npm install --save-dev jest-environment-jsdom
 ```bash
 npm i --save-dev @testing-library/jest-dom
 ```
+
 Remember to import the module to the test file with command:
 
 ```js
-import '@testing-library/jest-dom'
+import "@testing-library/jest-dom";
 ```
 
 ## Config files
@@ -84,11 +85,10 @@ Update compiler options in `tsconfig.json`.
 
 {
   "compilerOptions": {
-
     // ... other options
 
     "esModuleInterop": true
-  },
+  }
   // ... other configurations
 }
 ```
@@ -100,7 +100,7 @@ Create a script in `package.json` for running tests with Jest with `jest.config.
 ```json
 // package.json
 
-"scripts": { 
+"scripts": {
     "test": "jest --config jest.config.cjs"
   }
 ```
@@ -116,12 +116,13 @@ npm test
 ### **Setup**
 
 1. Create the Test Folder:
-    -  In the root level of your project, create a folder named `__tests__`. Jest is configured to automatically discover and run test files located in this folder.
 
-2. Test File Naming Convention: 
-    - When creating test files, follow the naming convention by appending `.test` before the file extension (`.ts` or `.tsx`). For example:
-        - For TypeScript files: `sample.test.ts`
-        - For TypeScript files with JSX syntax: `sample.test.tsx`
+   - In the root level of your project, create a folder named `__tests__`. Jest is configured to automatically discover and run test files located in this folder.
+
+2. Test File Naming Convention:
+   - When creating test files, follow the naming convention by appending `.test` before the file extension (`.ts` or `.tsx`). For example:
+     - For TypeScript files: `sample.test.ts`
+     - For TypeScript files with JSX syntax: `sample.test.tsx`
 
 ### **Sample syntax for writing tests with Jest**
 
@@ -129,11 +130,10 @@ npm test
 // sample.test.ts
 
 describe("Sample test", () => {
-    test("Testing if true is true", () => {
-        expect(true).toBe(true)
-    }
-    )
-})
+  test("Testing if true is true", () => {
+    expect(true).toBe(true);
+  });
+});
 ```
 
 Check the `__tests__` folder in the repo for more examples
