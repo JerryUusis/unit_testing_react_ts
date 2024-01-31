@@ -116,7 +116,7 @@ npm test
 ### **Setup**
 
 1. Create the Test Folder:
-    -  In the root level of your project, create a folder named __tests__. Jest is configured to automatically discover and run test files located in this folder.
+    -  In the root level of your project, create a folder named `__tests__`. Jest is configured to automatically discover and run test files located in this folder.
 
 2. Test File Naming Convention: 
     - When creating test files, follow the naming convention by appending `.test` before the file extension (`.ts` or `.tsx`). For example:
